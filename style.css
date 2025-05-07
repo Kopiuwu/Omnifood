@@ -1,0 +1,125 @@
+/*Importar fuente RUBIK*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {                         /* "Limpiar el navegador" */
+    margin: 0;              /* Adentro */
+    padding: 0;             /* Afuera */
+    box-sizing: border-box; /* Borde */
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --color-primario: #e67e22;
+    --color-secundario: #fdf2e9;
+    --color-texto: #333333;
+}
+
+button {
+    border:0;
+}
+
+nav {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;               /* Cero de arriba, 48 de lado. */
+}
+
+/* Globales */
+.boton {
+    padding: 12px 24px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.boton:active {
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+.boton-principal {
+    color:white;
+    background-color: var(--color-primario);
+    margin-right: 10px;
+}
+
+.boton-secundario {
+    color: var(--color-texto);
+    background-color: white;
+}
+
+ /* Nav */
+
+.nav-logo {
+    width: 165px;
+}
+
+.nav-lista {
+    list-style: none;          /*Quitar los puntos de la lista*/
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.nav-elemento {
+    font-size: 18px;
+    color:#333333;
+    font-weight: 500;           /* Fuente en negritas. */
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    background-color: var(--color-secundario);
+    padding: 48px;
+}
+
+.hero-imagen {
+    width: 570px;
+}
+
+.hero-contenedor {
+    width: 40%;
+}
+
+.hero-titulo {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.hero-subtitulo {
+    font-size: 20px;
+    margin-bottom: 48px;
+    font-weight: lighter;
+}
+
+.hero-compradores {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-comprador {
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    margin-left: -15px;
+    border:3px var(--color-secundario) solid;
+}
+
+.hero-compradores-texto-naranja {
+    color: var(--color-primario);
+}
