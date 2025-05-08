@@ -74,6 +74,14 @@ nav {
     font-weight: 500;           /* Fuente en negritas. */
 }
 
+.menu-boton {
+    width: 40px;
+}
+
+.menu-icono{
+    width: 40px;
+}
+
 /* Hero */
 
 .hero {
@@ -85,7 +93,7 @@ nav {
 }
 
 .hero-imagen {
-    width: 570px;
+    width: 100%;
 }
 
 .hero-contenedor {
@@ -107,7 +115,6 @@ nav {
 .hero-compradores {
     margin-top: 80px;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -120,6 +127,121 @@ nav {
     border:3px var(--color-secundario) solid;
 }
 
+.hero-compradores-texto {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 .hero-compradores-texto-naranja {
     color: var(--color-primario);
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width:1200px) {
+    .nav-elemento {
+        font-size: 16px;
+    }
+    .hero-titulo {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .nav-lista {
+        display: none;
+    }
+    .menu-boton {
+        display: block;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-contenedor {
+        width: 100%;
+    }
+    .hero-titulo,
+    .hero-subtitulo {
+        text-align: center;
+    }
+    .hero-botones {
+        justify-content: center;
+    }
+    .hero-compradores {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero, nav {
+        padding: 15px;
+    }
+    .hero-titulo {
+        font-size: 25px;
+    }
+    .hero-subtitulo {
+        font-size: 20px;
+    }
+    .hero-botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero-compradores {
+        flex-direction: column;
+    }
+    .hero-compradores-texto {
+        text-align: center;
+        text-wrap: balance;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .featured-image {
+        width: 130px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .featured-image {
+        width: auto;
+        height: 32;
+    }
+    .featured-logo {
+        flex-direction: column;
+    }
+}
+
+/* FEATURED */
+
+.featured-contenedor {
+    padding: 10px;
+    margin: auto;
+}
+
+.featured {
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+.featured-texto {
+    font-size: 15px;
+    font-family: ;
+    margin: 50px;
+    text-align: center;
+}
+
+.featured-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.featured-image {
+    width:auto;
+    height:32px;
 }
