@@ -1,2 +1,2 @@
 Repositorio de Omnifood
-:3
+:3Actualización de la barra de featured y responsive.
