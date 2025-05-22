@@ -137,177 +137,480 @@ nav {
     color: var(--color-primario);
 }
 
-/* FEATURED */
-
-.featured-contenedor {
-    padding: 10px;
-    margin: auto;
-}
-
-.featured {
+/* Logos */
+.logos {
+    text-align: center;
+  }
+  .logos-titulo {
+    font-size: 15px;
+    color: var(--color-texto);
+    text-transform: uppercase;
+    padding: 50px 0;
     filter: brightness(0);
     opacity: 50%;
-}
-
-.featured-texto {
-    font-size: 15px;
-    margin: 50px;
-    text-align: center;
-}
-
-.featured-logos {
+  }
+  
+  .contenedor-logos {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px;
-}
-
-.featured-image {
-    gap: 10px;
-    width:auto;
-    height:32px;
-}
-
-/* STEPS SECTION */
-.steps {
-    padding-left: 300px;
-    padding-top: 100px;
-    color: var(--color-texto);
-    align-items: center;
-}
-.steps-titulo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .logos-imagen {
+    height: 30px;
+    filter: brightness(0);
+    opacity: 50%;
+  }
+  
+  /* Pasos */
+  .pasos {
+    padding: 100px 300px;
+  }
+  .pasos-subtitulo {
     font-size: 20px;
-    font-weight: 500;
-    text-align: start   ;
-    margin-bottom: 20px;
-    letter-spacing: 0.75px;
     color: var(--color-primario);
-}
-.steps-subtitulo {
+    text-transform: uppercase;
+  }
+  .pasos-titulo {
     font-size: 48px;
-    font-weight: bold;
-    text-align: start;
-    margin-bottom: 150px;
-    padding-bottom: 100px;
-}
-.number01y03 {
-    opacity: 20%;
+    padding: 20px 0;
+  }
+  
+  .pasos-contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+  .pasos-contenedor-reversa {
+    flex-direction: row-reverse;
+  }
+  .pasos-contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .pasos-contenedor-imagen {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pasos-numero {
     font-size: 90px;
     font-weight: 500;
-}
-.step01y03-texto, .step02-texto {
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 50px;
+    opacity: 20%;
+  }
+  .pasos-contenedor-titulo {
+    font-size: 30px;
     font-weight: 700;
-    letter-spacing: -0.5px;
-}
-.step02-texto {
-    display: flex;
-    justify-content: right;
-    padding-bottom: 20px;
-    padding-left: 600px;
-    padding-right: 500px;
-}
-.number02 {
-    display: flex;
-    justify-content: right;
-    opacity: 20%;
-    font-size: 90px;
-    padding-bottom: 20px;
-    padding-right: 810px;
-    font-weight: 500;
-}
-.step01y03-descripcion {
+    padding-bottom: 30px;
+  }
+  .pasos-contenedor-descripcion {
     font-size: 20px;
-    line-height: 1.8;
+    text-align: justify;
+    line-height: 32px;
+  }
+  
+  .pasos-imagen {
+    width: 45%;
+    max-width: 190px;
+    margin: auto;
+    z-index: -1;
+  }
+
+  /* Recetas */
+
+.recetas {
+  text-align: center;
 }
-.step01-image-box {
-    width: 35%;
-    padding-bottom: 60%;
-    background-color: var(--color-secundario);
+.recetas-subtitulo {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-primario);
+  text-transform: uppercase;
+  padding: 40px 0 0;
 }
-.step02-image-box {
-    width: 35%;
-    background-color: var(--color-secundario);
+.recetas-titulo {
+  font-size: 48px;
+  padding: 20px 0;
 }
-.step03-image-box {
-    width: 35%;
-    background-color: var(--color-secundario);
+.recetas-tarjetas {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 60px;
+  margin: 80px 0;
+  flex-wrap: wrap;
+}
+.recetas-tarjeta {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  text-align: left;
+  transition: all 0.3s;
+}
+.recetas-dieta {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.recetas-tarjeta:hover {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-1.2rem);
+}
+.recetas-tarjeta-imagen {
+  width: 100%;
+}
+.recetas-texto {
+  padding: 35px 45px 45px;
+}
+.recetas-etiqueta {
+  background-color: #51cf66;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  display: inline-block;
+}
+.recetas-etiqueta-amarilla {
+  background-color: #ffd43b;
+}
+.recetas-tarjeta-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+.recetas-lista {
+  list-style: none;
+  text-align: left;
+}
+.recetas-elemento {
+  margin: 20px 0;
+  font-size: 18px;
+}
+.recetas-icono {
+  color: var(--color-primario);
+  margin-right: 15px;
+}
+
+.recetas-dieta-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+  text-align: left;
+}
+
+/* TESTIMONIOS */
+
+.testimonios {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-secundario);
+  padding: 50px;
+}
+
+.testimonios-subtitulo {
+  padding: 150px 0 0 0;
+  font-size: 20px;
+  font-weight: 450;
+  color: var(--color-primario);
+  text-transform: uppercase;
+}
+
+.testimonios-titulo {
+  font-size: 40px;
+  padding: 20px 0;
+  color: var(--color-texto);
+  padding-bottom: 100px;
+
+}
+
+/* TARJETAS */
+
+.contenedor-testimonios {
+  width: 100%;
+  padding: 70px;
+}
+
+.contenedor-testimonios-tarjeta {
+  width: 100%;
+}
+
+.testimonios-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.testimonios-tarjeta {
+  width: 45%;
+  padding: 10px;
+  color: #6f6f6f;
+}
+
+.testimonios-tarjeta-imagen {
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+.testimonios-texto {
+  padding-top: 5px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.testimonios-nombre {
+  font-size: 18px;
+}
+
+/* GALERIA */
+
+.galeria {
+  width: 100%;
+  padding: 50px 10px;
+}
+
+.galeria-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.galeria-contenedor-imagen {
+  height: 260px;
+  overflow: hidden;
+}
+
+.galeria-imagen {
+  height: 260px;
+}
+
+.galeria-imagen:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 
 /* RESPONSIVO */
 
-@media screen and (max-width:1200px), (max-width: 1800px) {
-    .nav-elemento {
-        font-size: 16px;
-    }
-    .hero-titulo {
-        font-size: 40px;
-    }
+@media screen and (max-width: 1200px) {
+  .nav-elemento {
+    font-size: 16px;
+  }
+  .hero-titulo {
+    font-size: 40px;
+  }
+  .testimonios-subtitulo {
+  padding: 100px 0 0 0;
+  }
+  .testimonios-titulo {
+  font-size: 30px;
+  padding-bottom: 30px;
+  }
+  .contenedor-testimonios {
+  padding: 50px;
+  }
+
+  .contenedor-testimonios-tarjeta {
+    width: 100%;
+  }
+
+  .testimonios-tarjeta {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .testimonios-tarjeta-imagen {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonios-texto {
+    padding-top: 5px;
+    font-size: 15px;
+  }
+
+  .testimonios-nombre {
+    font-size: 14px;
+  }
+
+  .galeria-contenedor-imagen {
+    height: 200px;
+  }
+
+  .galeria-imagen {
+    height: 200px;
+  }
 }
 
-@media screen and (max-width:700px), (max-width: 950px), (max-width: 1000px) {
-    .nav-lista {
-        display: none;
-    }
-    .menu-boton {
-        display: block;
-    }
-    .hero {
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero-contenedor {
-        width: 100%;
-    }
-    .hero-titulo,
-    .hero-subtitulo {
-        text-align: center;
-    }
-    .hero-botones {
-        justify-content: center;
-    }
-    .hero-compradores {
-        justify-content: center;
-    }
-    .featured-logos {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .featured-image {
-        margin: 30px
-    }
+@media screen and (max-width: 950px) {
+  .nav-lista {
+    display: none;
+  }
+  .menu-boton {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-contenedor {
+    width: 100%;
+  }
+  .hero-titulo,
+  .hero-subtitulo {
+    text-align: center;
+  }
+  .hero-botones {
+    justify-content: center;
+  }
+  .hero-compradores {
+    justify-content: center;
+  }
+  .pasos-contenedor {
+    flex-direction: column-reverse;
+  }
+  .pasos-contenedor-imagen,
+  .pasos-contenedor-texto {
+    width: 100%;
+  }
+  .pasos-titulo {
+    font-size: 30px;
+  }
+  .recetas-titulo {
+    font-size: 40px;
+  }
+  .testimonios {
+    padding: 0;
+  }
+  .testimonios-subtitulo {
+  padding: 100px 0 0 0;
+  }
+  .testimonios-titulo {
+  font-size: 30px;
+  padding-bottom: 30px;
+  }
+  .contenedor-testimonios {
+  padding: 50px;
+  }
+
+  .contenedor-testimonios-tarjeta {
+    width: 100%;
+  }
+
+  .testimonios-tarjeta {
+    width: 40%;
+    padding: 0;
+  }
+
+  .testimonios-tarjeta-imagen {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonios-texto {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+
+  .testimonios-nombre {
+    font-size: 11px;
+  }
+
+  .galeria-contenedor-imagen {
+    height: 150px;
+  }
+  
+  .galeria-imagen {
+    height: 150px;
+  }
 }
 
-@media screen and (max-width:400px), (max-width: 600px) {
-    .hero, nav {
-        padding: 15px;
-    }
-    .hero-titulo {
-        font-size: 25px;
-    }
-    .hero-subtitulo {
-        font-size: 20px;
-    }
-    .hero-botones {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .hero-compradores {
-        flex-direction: column;
-    }
-    .hero-compradores-texto {
-        text-align: center;
-        text-wrap: balance;
-    }
-    .featured-logos {
-        flex-direction: column;
-        grid-gap: 30px 5px;
-    }
-    .featured-image {
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
+@media screen and (max-width: 400px) {
+  
+  .hero, nav {
+    padding: 15px;
+  }
+  
+  .hero-titulo {
+    font-size: 25px;
+  }
+  
+  .hero-subtitulo {
+    font-size: 20px;
+  }
+  
+  .hero-botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .hero-compradores {
+    flex-direction: column;
+  }
+  
+  .hero-compradores-texto {
+    text-align: center;
+    text-wrap: balance;
+  }
+  
+  .recetas-titulo {
+    font-size: 30px;
+  }
+  
+  .testimonios {
+    display: block;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .testimonios-subtitulo {
+  padding: 80px 0 0 0;
+  }
+  
+  .testimonios-titulo {
+  font-size: 20px;
+  padding-bottom: 30px;
+  }
+  .testimonios-texto {
+    width: 250%;
+  }
+  .testimonios-tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  }
+  
+  .galeria-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+  .galeria-contenedor-imagen {
+    height: 80px;
+  }
+  
+  .galeria-imagen {
+    height: 80px;
+  }
+  
 }

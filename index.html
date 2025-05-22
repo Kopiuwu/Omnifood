@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -55,62 +56,248 @@
             alt="Imagenes de comida"/>
         </div>
     </section>
-    <section class="featured">
-        <div class="featured-contenedor">
-            <h1 class="featured-texto"> DESTACADO EN </h1>
-            <div class="featured-logos">
-                <img class="featured-image" src="./assets/techcrunch.png" alt="techcrunch-logo">
-                <img class="featured-image" src="./assets/business-insider.png" alt="business-logo">
-                <img class="featured-image" src="./assets/the-new-york-times.png" alt="the-new-york-times-logo">
-                <img class="featured-image" src="./assets/forbes.png" alt="forbes-logo">
-                <img class="featured-image" src="./assets/usa-today.png" alt="usa-toda-logoy">
-            </div>
+    <section class="logos">
+        <div class="contenedor">
+          <h2 class="logos-titulo">Como aparece en</h2>
+          <div class="contenedor-logos">
+            <img src="./assets/techcrunch.png" class="logos-imagen" alt="Logo-TechCruch">
+            <img src="./assets/business-insider.png" class="logos-imagen" alt="Logo-Bussines-Insider">
+            <img src="./assets/the-new-york-times.png" class="logos-imagen" alt="Logo-NYT">
+            <img src="./assets/forbes.png" class="logos-imagen" alt="Logo-Forbes">
+            <img src="./assets/usa-today.png" class="logos-imagen" alt="Logo-USA-Today">
+          </div>
         </div>
-    </section>
-    <section class="steps">
-        <div>
-            <span class="steps-texto">
-                <h1 class="steps-titulo">COMO FUNCIONA</h1>
-                <h2 class="steps-subtitulo">Tu dosis diaria de salud en 3 sencillos pasos</h2>
-            </span>
-            <div class="steps-images-box">
-                <div class="step01y03">
-                <p class="number01y03">01</p>
-                <p class="step01y03-texto"> Cuéntanos qué te gusta (y qué no) </p>
-                <p class="step01y03-descripcion"> ¡No pierdas más tiempo pensando en qué comer! 
-                    Omnifood AI creará un plan de comidas semanal 
-                    100 % personalizado solo para ti. ¡Te garantiza 
-                    obtener todos los nutrientes y vitaminas que 
-                    necesitas, sin importar tu dieta!</p>
-                </div>
-                <div class="step01-image-box"> 
-                    <img class="step01-image" src="./assets/app-screen-1.png" alt="Imagen del paso 1">
-                </div>  
-                <div class="step02">
-                <p class="number02">02</p>
-                <p class="step02-texto"> Aprueba tu plan de alimentación semanal </p>
-                <p class="step02-descripcion"> Una vez por semana, aprueba el plan de comidas 
-                    que Omnifood AI te ha generado. Puedes cambiar 
-                    ingredientes, intercambiar comidas completas o 
-                    incluso añadir tus propias recetas.</p>
-                </div>
-                <div class="step02-image-box"> 
-                    <img class="step02-image" src="./assets/app-screen-2.png" alt="Imagen del paso 2">
-                </div> 
-                <div class="step02">
-                <div class="number01y03">03</div>
-                <div class="step01y03-texto"> Reciba comidas en un horario conveniente </div>
-                <div class="step01y03-descripcion"> Los mejores chefs de la ciudad cocinarán tu 
-                    comida favorita todos los días y te la 
-                    entregaremos a domicilio cuando mejor te convenga. 
-                    ¡Puedes cambiar el horario y la dirección de 
-                    entrega a diario!</div>
-                </div>
-                <div class="step03-image-box"> 
-                    <img class="step03-image" src="./assets/app-screen-3.png" alt="Imagen del paso 3">
-                </div> 
+      </section>
+      <section class="pasos">
+        <div class="contenedor">
+          <p class="pasos-subtitulo">Como funciona</p>
+          <h1 class="pasos-titulo">
+            Tu dosis diaria de salud en 3 simples pasos
+          </h1>
+          <div class="pasos-contenedor">
+            <div class="pasos-contenedor-texto">
+              <span class="pasos-numero">01</span>
+              <h2 class="pasos-contenedor-titulo">
+                Cuentanos que te gusta (y que no)
+              </h2>
+              <p class="pasos-contenedor-descripcion">
+                ¡No pierdas más tiempo pensando en qué comer! Omnifood AI creará
+                un plan de comidas semanal 100 % personalizado solo para ti. ¡Te
+                garantiza obtener todos los nutrientes y vitaminas que necesitas,
+                sin importar tu dieta!
+              </p>
             </div>
+            <div class="pasos-contenedor-imagen">
+              <img
+                class="pasos-imagen"
+                src="./assets/app-screen-1.png"
+                alt="Telefono con app de omnifood"
+              />
+            </div>
+          </div>
+          <div class="pasos-contenedor pasos-contenedor-reversa">
+            <div class="pasos-contenedor-texto">
+              <span class="pasos-numero">02</span>
+              <h2 class="pasos-contenedor-titulo">
+                Aprueba tu plan de alimentacion semanal
+              </h2>
+              <p class="pasos-contenedor-descripcion">
+                Una vez por semana, aprueba el plan de comidas que Omnifood AI te
+                ha generado. Puedes cambiar ingredientes, intercambiar comidas
+                completas o incluso añadir tus propias recetas.
+              </p>
+            </div>
+            <div class="pasos-contenedor-imagen">
+              <img
+                class="pasos-imagen"
+                src="./assets/app-screen-2.png"
+                alt="Telefono con app de omnifood"
+              />
+            </div>
+          </div>
+          <div class="pasos-contenedor">
+            <div class="pasos-contenedor-texto">
+              <span class="pasos-numero">03</span>
+              <h2 class="pasos-contenedor-titulo">
+                Recibe comidas en un horario conviniente
+              </h2>
+              <p class="pasos-contenedor-descripcion">
+                Los mejores chefs de la ciudad cocinarán tu comida favorita todos
+                los días y te la entregaremos a domicilio cuando mejor te
+                convenga. ¡Puedes cambiar el horario y la dirección de entrega a
+                diario!
+              </p>
+            </div>
+            <div class="pasos-contenedor-imagen">
+              <img
+                class="pasos-imagen"
+                src="./assets/app-screen-1.png"
+                alt="Telefono con app de omnifood"
+              />
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <section class="recetas">
+        <div class="contenedor">
+          <p class="recetas-subtitulo">Comidas</p>
+          <h1 class="recetas-titulo">
+            Omnifood IA escoge entre mas de 5,000 recetas
+          </h1>
+          <div class="recetas-tarjetas">
+            <div class="recetas-tarjeta">
+              <img
+                class="recetas-tarjeta-imagen"
+                src="/assets/meal-1.jpg"
+                alt="Comida Japonesa"
+              />
+              <div class="recetas-texto">
+                <span class="recetas-etiqueta">Vegetariana</span>
+                <h4 class="recetas-tarjeta-titulo">Gyozas Japonesas</h4>
+                <ul class="recetas-lista">
+                  <li class="recetas-elemento">
+                    <i class="recetas-icono icon ion-md-bonfire"></i> 650 calorías
+                  </li>
+                  <li class="recetas-elemento">
+                    <i class="recetas-icono icon ion-md-restaurant"></i>
+                    NutriScore 74
+                  </li>
+                  <li class="recetas-elemento">
+                    <i class="recetas-icono icon ion-md-star-outline"></i> 4.9
+                    rating (537)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="recetas-tarjeta">
+              <img
+                class="recetas-tarjeta-imagen"
+                src="/assets/meal-2.jpg"
+                alt="Comida Japonesa"
+              />
+              <div class="recetas-texto">
+                <span class="recetas-etiqueta">Vegetariana</span>
+                <span class="recetas-etiqueta recetas-etiqueta-amarilla"
+                  >Saludable</span
+                >
+                <h4 class="recetas-tarjeta-titulo">Ensalada de Aguacate</h4>
+                <ul class="recetas-lista">
+                  <li class="recetas-elemento">
+                    <i class="recetas-icono icon ion-md-bonfire"></i> 400 calorías
+                  </li>
+                  <li class="recetas-elemento">
+                    <i class="recetas-icono icon ion-md-restaurant"></i>
+                    NutriScore 92
+                  </li>
+                  <li class="recetas-elemento">
+                    <i class="recetas-icono icon ion-md-star-outline"></i> 4.8
+                    rating (537)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="recetas-dieta">
+              <h3 class="recetas-dieta-titulo">Trabaja con cualquier dieta</h3>
+              <ul class="recetas-lista">
+                <li class="recetas-elemento">
+                  <i class="recetas-icono icon ion-md-checkmark"></i> Vegetariana
+                </li>
+                <li class="recetas-elemento">
+                  <i class="recetas-icono icon ion-md-checkmark"></i> Vegano
+                </li>
+                <li class="recetas-elemento">
+                  <i class="recetas-icono icon ion-md-checkmark"></i> Pescado
+                </li>
+                <li class="recetas-elemento">
+                  <i class="recetas-icono icon ion-md-checkmark"></i> Gluten Free
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonios">
+        <div class="contenedor-testimonios">
+          <p class="testimonios-subtitulo"> Testimonios </p>
+          <h1 class="testimonios-titulo"> Una vez que lo intentas, no puedes volver. </h1>
+          <div class="contenedor-testimonios-tarjeta">
+            <div class="testimonios-tarjetas">
+              <div class="testimonios-tarjeta">
+              <img class="testimonios-tarjeta-imagen" src="./assets/dave.jpg" alt="Fotografía del cliente Dave">
+              <p class="testimonios-texto"> Comidas baratas, saludables
+                                            y de gran sabor, sin tener 
+                                            que pedir manualmente. Se siente 
+                                            realmente mágico. </p>
+                <p class="testimonios-nombre"> — Dave Bryson </p>
+              </div>
+              <div class="testimonios-tarjeta">
+              <img class="testimonios-tarjeta-imagen" src="./assets/ben.jpg" alt="Fotografía del cliente Ben">
+              <p class="testimonios-texto"> El algoritmo de IA es loco bueno, 
+                                            elige las comidas adecuadas para 
+                                            mí cada vez. Es increíble no 
+                                            preocuparse más por la comida. </p>
+                <p class="testimonios-nombre"> — Ben Hadley </p>
+              </div>
+              <div class="testimonios-tarjeta">
+              <img class="testimonios-tarjeta-imagen" src="./assets/steve.jpg" alt="Fotografía del cliente Steve">
+              <p class="testimonios-texto"> Omnifood es un salvavidas. 
+                                            Acabo de empezar una compañía, 
+                                            así que no hay tiempo para 
+                                            cocinar. No podría vivir sin 
+                                            mis comidas diarias ahora. </p>
+                <p class="testimonios-nombre"> — Steve Miller </p>
+              </div>
+              <div class="testimonios-tarjeta">
+              <img class="testimonios-tarjeta-imagen" src="./assets/hannah.jpg" alt="Fotografía del cliente Hanna">
+              <p class="testimonios-texto"> Tengo Omnifood para toda la 
+                                            familia, y se libera mucho 
+                                            tiempo. Además, todo es orgánico 
+                                            y vegano y sin plástico.</p>
+                <p class="testimonios-nombre"> — Hannah Smith </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="galeria">
+            <div class="galeria-contenedor">
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-1.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-2.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-3.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-4.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-5.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-6.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-7.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-8.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-9.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-10.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-11.jpg" alt="Imagen de comida">
+              </div>
+              <div class="galeria-contenedor-imagen">
+                <img class="galeria-imagen" src="./assets/gallery-12.jpg" alt="Imagen de comida">
+              </div>
+            </div>
+          </div>
 </body>
 </html>
